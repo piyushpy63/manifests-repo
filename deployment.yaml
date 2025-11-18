@@ -1,0 +1,27 @@
+apiVersion: apps/v1
+
+kind: Deployment
+
+metadata:
+  name: myapp
+  labels:
+    app: myapp
+
+spec:
+  replicas: 1
+
+  selector:
+    matchLabels:
+      app: myapp
+
+  templates:
+    metadata:
+      labels:
+        app: myapp
+    spec:
+      containers:
+      - name: myapp
+        image: piyush63/yourapp:latest
+        ports:
+        - containerPort: 5000
+
