@@ -14,10 +14,10 @@ spec:
     matchLabels:
       app: myapp
 
-  templates:
+  template:
     metadata:
-      labels:
-        app: myapp
+    labels:
+      app: myapp
     spec:
       containers:
       - name: myapp
