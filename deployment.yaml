@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: myapp
-        image: piyush63/yourapp:
+        image: piyush63/yourapp:latest
         ports:
         - containerPort: 5000
 
